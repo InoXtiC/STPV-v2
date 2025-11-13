@@ -9,7 +9,7 @@ export function saveData() {
 export function loadData() {
   const data = JSON.parse(localStorage.getItem('toto_data') || '{}');
   if (data.systems) {
-    for (let key in data.systems) Object.assign(systems[key], data.systems[key]);
+    for (let i = 6; i <= 12; i++) Object.assign(systems[i], data.systems[i]);
   }
   if (data.numberFrequency) numberFrequency.splice(0, 50, ...data.numberFrequency);
   updateChart(numberFrequency);
