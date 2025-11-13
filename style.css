@@ -4,13 +4,9 @@ body {
   color: #333;
   text-align: center;
   margin: 0;
-  padding: 0;
 }
 
-h1, h2 { margin-top: 1rem; }
-
-.controls { margin: 1rem 0; }
-
+.controls { margin: 1rem; }
 button {
   padding: 0.6rem 1rem;
   margin: 0.3rem;
@@ -19,9 +15,16 @@ button {
   color: white;
   border-radius: 6px;
   cursor: pointer;
-  transition: background 0.3s;
 }
 button:hover { background: #155ab6; }
+
+.input-container { margin: 1rem auto; }
+#userInputs input {
+  width: 40px;
+  text-align: center;
+  margin: 0.2rem;
+  font-size: 16px;
+}
 
 .system-container {
   max-width: 700px;
@@ -41,17 +44,10 @@ button:hover { background: #155ab6; }
   width: 150px;
   background: #fafafa;
 }
-.system-card h3 { margin: 0.3rem 0; }
-
-.chart-section { max-width: 800px; margin: 2rem auto; }
 
 canvas { width: 100%; height: 300px; }
 
 body.dark {
   background: #1e1e1e;
   color: #ddd;
-}
-body.dark .system-container, body.dark .system-card {
-  background: #2a2a2a;
-  border-color: #444;
 }
